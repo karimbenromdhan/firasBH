@@ -1,0 +1,298 @@
+@import "../../../src/styles.scss";
+
+main {
+  .slider {
+    position: relative;
+    height: 700px;
+    .menu {
+      position: absolute;
+      width: 100%;
+    }
+    height: 350px;
+    @include media-breakpoint-up(sm) {
+      height: 300px;
+    }
+    @include media-breakpoint-up(md) {
+      height: 350px;
+    }
+    @include media-breakpoint-up(lg) {
+      height: 500px;
+    }
+    @include media-breakpoint-up(xl) {
+      height: 600px;
+    }
+    @include media-breakpoint-up(xll) {
+      height: 800px;
+    }
+    .slider-image {
+      width: 100%;
+      height: 100%;
+
+      background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+        url("../../assets/images/couple-formation-gymnase-min.png");
+      background-size: cover;
+      background-repeat: no-repeat;
+    }
+    .slider-text {
+      .title-one {
+        p {
+          font-size: 14px;
+          position: absolute;
+          right: 0%;
+          padding-right: 10px;
+          top: 20%;
+          transform: translateY(20%);
+          line-height: 1.5;
+          color: #ffffff;
+          font-family: PoppinsMed;
+          white-space: nowrap;
+          @include media-breakpoint-up(sm) {
+            top: 9%;
+            font-size: 20px;
+            padding-right: 20px;
+          }
+          @include media-breakpoint-up(md) {
+            top: 9%;
+            font-size: 30px;
+            padding-right: 30px;
+          }
+          @include media-breakpoint-up(lg) {
+            top: 10%;
+            font-size: 40px;
+            padding-right: 110px;
+          }
+          @include media-breakpoint-up(xl) {
+            top: 12%;
+            font-size: 45px;
+            padding-right: 110px;
+          }
+        }
+      }
+      .title-two {
+        position: absolute;
+        right: 0%;
+        display: flex;
+        justify-content: space-between;
+        transform: translateY(50%);
+        line-height: 1.5;
+        color: $color-white;
+        font-family: PoppinsBold;
+        white-space: nowrap;
+        top: 25%;
+        font-size: 17px;
+        padding-right: 10px;
+        @include media-breakpoint-up(sm) {
+          top: 16%;
+          font-size: 20px;
+          padding-right: 20px;
+        }
+        @include media-breakpoint-up(md) {
+          top: 14%;
+          font-size: 35px;
+          padding-right: 30px;
+        }
+        @include media-breakpoint-up(lg) {
+          top: 17%;
+          font-size: 45px;
+          padding-right: 110px;
+        }
+        @include media-breakpoint-up(xl) {
+          top: 25%;
+          font-size: 65px;
+          padding-right: 170px;
+        }
+        @include media-breakpoint-up(xll) {
+          top: 25%;
+          font-size: 65px;
+          padding-right: 210px;
+        }
+        .description {
+          width: 165px;
+          height: 60px;
+          white-space: break-spaces;
+          @include media-breakpoint-up(sm) {
+            width: 235px;
+            height: 80px;
+          }
+          @include media-breakpoint-up(md) {
+            width: 357px;
+            height: 140px;
+          }
+          @include media-breakpoint-up(lg) {
+            width: 467px;
+            height: 150px;
+          }
+          @include media-breakpoint-up(xl) {
+            width: 477px;
+            height: 150px;
+          }
+          @include media-breakpoint-up(xll) {
+            width: 433px;
+            height: 150px;
+          }
+        }
+        span {
+          display: inline-block;
+          white-space: nowrap;
+          word-wrap: break-word;
+          padding-right: 10px;
+          &.active {
+            color: $primary-color;
+          }
+        }
+      }
+      .join-us {
+        top: 48%;
+        width: 90px;
+        height: 40px;
+        margin-right: 50px;
+        font-size: 15px;
+        border-style: solid;
+        border-color: $primary-color;
+        position: absolute;
+        right: 0%;
+        border-radius: 25px;
+        transform: translateY(50%);
+        line-height: 2;
+        font-family: PoppinsBold;
+        white-space: nowrap;
+        text-align: center;
+        font-weight: 900;
+        line-height: 1.5;
+        color: $color-white;
+        background-color: $tansparent-color;
+        white-space: nowrap;
+        cursor: pointer;
+        @include media-breakpoint-up(sm) {
+          top: 53%;
+          width: 100px;
+          height: 50px;
+          margin-right: 70px;
+          font-size: 17px;
+        }
+        @include media-breakpoint-up(md) {
+          top: 63%;
+          width: 110px;
+          height: 50px;
+          margin-right: 140px;
+          font-size: 20px;
+        }
+        @include media-breakpoint-up(lg) {
+          top: 57%;
+          width: 140px;
+          height: 60px;
+          margin-right: 220px;
+          font-size: 27px;
+        }
+        @include media-breakpoint-up(xl) {
+          top: 70%;
+          width: 200px;
+          height: 75px;
+          margin-right: 300px;
+          font-size: 37px;
+        }
+        @include media-breakpoint-up(xll) {
+          top: 71%;
+          width: 380px;
+          height: 125px;
+          margin-right: 150px;
+          font-size: 80px;
+        }
+      }
+    }
+  }
+  .parag-1 {
+    padding-top: 30px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    .question {
+      font-family: PoppinsBold;
+      color: $primary-color;
+      //font-size: 35px;
+      font-size: 15px;
+      @include media-breakpoint-up(sm) {
+        font-size: 20px;
+      }
+      @include media-breakpoint-up(md) {
+        font-size: 25px;
+      }
+      @include media-breakpoint-up(lg) {
+        font-size: 30px;
+      }
+      @include media-breakpoint-up(xl) {
+        font-size: 35px;
+      }
+      @include media-breakpoint-up(xll) {
+        font-size: 40px;
+      }
+    }
+    .response {
+      font-family: PoppinsBold;
+      color: $color-white;
+
+      font-size: 20px;
+      padding-top: 40px;
+      @include media-breakpoint-up(sm) {
+        font-size: 25px;
+      }
+      @include media-breakpoint-up(md) {
+        font-size: 30px;
+      }
+      @include media-breakpoint-up(lg) {
+        font-size: 35px;
+      }
+      @include media-breakpoint-up(xl) {
+        font-size: 40px;
+      }
+      @include media-breakpoint-up(xll) {
+        font-size: 45px;
+      }
+    }
+  }
+  .card-section {
+    padding-top: 50px;
+    display: flex;
+    justify-content: space-between;
+    margin: 0px 80px;
+    flex: 1 1 60%;
+    .card {
+      width: 450px;
+      height: 450px;
+      border-radius: 25px;
+      background-color: $shadow-color;
+      .logo {
+        padding-top: 50px;
+        width: 100%;
+        height: 40%;
+        display: flex;
+        justify-content: center;
+        img {
+          width: 150px;
+          height: 160px;
+        }
+      }
+      .content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        .title {
+          padding-top: 10px;
+          color: $color-white;
+          font-size: 25px;
+          font-weight: 900;
+        }
+        p {
+          padding: 0px 50px;
+          text-align: center;
+          padding-top: 10px;
+          color: $color-white;
+          font-size: 17px;
+          font-weight: 500;
+        }
+      }
+    }
+  }
+}
